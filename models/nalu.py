@@ -32,7 +32,7 @@ class NeuralArithmeticLogicUnitCell(nn.Module):
 
     def forward(self, input):
         a = self.nac(input)
-        g = F.sigmoid(F.linear(input, self.G, self.bias))
+        g = torch.sigmoid(F.linear(input, self.G, self.bias))
         add_sub = g * a
         log_input = torch.log(torch.abs(input) + self.eps)
         m = torch.exp(self.nac(log_input))

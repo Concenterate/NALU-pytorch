@@ -51,3 +51,8 @@ This should generate a text file called `interpolation.txt` with the following r
 | a / b   | 97.070   | 60.594   | 5.730    | 3.042  |
 | a ^ 2   | 89.987   | 2.977    | 4.718    | 1.117  |
 | sqrt(a) | 5.939    | 40.243   | 7.263    | 1.119  |
+
+## Notes
+
+* RMSprop works really well with NAC and NALU
+* high learning rate (0.01) does a good job as well
